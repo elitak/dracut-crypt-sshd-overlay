@@ -1,18 +1,20 @@
 EAPI=5
 
-DESCRIPTION=""
+DESCRIPTION="Runs sshd from initramfs to allow unlocking encrypted volumes remotely"
 HOMEPAGE="https://github.com/mk-fg/dracut-crypt-sshd"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="
+DEPEND=""
+RDEPEND="
+	${DEPEND}
 	sys-kernel/dracut[net]
 	net-misc/dropbear[syslog]
 "
-RDEPEND="${DEPEND}"
+
 
 inherit 'git-2'
 EGIT_REPO_URI="https://github.com/mk-fg/dracut-crypt-sshd"
