@@ -11,7 +11,7 @@ IUSE=""
 DEPEND=""
 RDEPEND="
 	${DEPEND}
-	sys-kernel/dracut[net]
+	|| ( <=sys-kernel/dracut-034[net] >=sys-kernel/dracut-035 )
 	net-misc/dropbear[syslog]
 "
 
